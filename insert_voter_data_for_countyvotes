@@ -1,0 +1,28 @@
+Insert new document for Index countyvotes with type voters
+
+======================================
+======================================
+
+Request: 
+
+POST localhost:9200/countyvotes/voter/
+{
+  "age" : 45,
+  "name": "careless Ninja"
+}
+
+Response:
+
+{
+    "_index": "countyvotes",
+    "_type": "voter",
+    "_id": "AWM308z6hfrm9b-xh7ku",
+    "_version": 1,
+    "result": "created",
+    "_shards": {
+        "total": 2,
+        "successful": 1,
+        "failed": 0
+    },
+    "created": true
+}

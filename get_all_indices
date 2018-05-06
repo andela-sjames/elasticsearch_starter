@@ -1,0 +1,15 @@
+use the cat api to get all indices
+
+====================================
+====================================
+
+Request:
+
+GET http://localhost:9200/_cat/indices?v
+
+Response:
+
+health status index               uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   logstash-2017.06.30 D5V6keexTFCrX8kdabGHWA   5   1         90            0    223.9kb        223.9kb
+yellow open   logstash-2017.07.03 uoE-SyqsRPKHpOSs1aW-wQ   5   1          2            0     18.6kb         18.6kb
+yellow open   .kibana             Wo8DWFVTToyggU-somNXnA   1   1          4            1     19.3kb         19.3kb

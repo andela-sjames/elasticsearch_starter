@@ -1,0 +1,36 @@
+get all created document for voters type
+
+========================================
+========================================
+
+Request: 
+
+GET localhost:9200/countyvotes/_search
+
+Response:
+
+{
+    "took": 46,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0
+    },
+    "hits": {
+        "total": 1,
+        "max_score": 1,
+        "hits": [
+            {
+                "_index": "countyvotes",
+                "_type": "voter",
+                "_id": "AWM308z6hfrm9b-xh7ku",
+                "_score": 1,
+                "_source": {
+                    "age": 45,
+                    "name": "careless Ninja"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+Get created index from elasticsearch
+
+======================================
+======================================
+
+Request: 
+
+GET localhost:9200/countyvotes?pretty
+
+Response:
+
+{
+    "countyvotes": {
+        "aliases": {},
+        "mappings": {
+            "voter": {
+                "properties": {
+                    "age": {
+                        "type": "long"
+                    },
+                    "name": {
+                        "type": "text"
+                    }
+                }
+            }
+        },
+        "settings": {
+            "index": {
+                "creation_date": "1525649821131",
+                "number_of_shards": "1",
+                "number_of_replicas": "1",
+                "uuid": "f08ghJYrRWq1sWxsEprrag",
+                "version": {
+                    "created": "5050199"
+                },
+                "provided_name": "countyvotes"
+            }
+        }
+    }
+}

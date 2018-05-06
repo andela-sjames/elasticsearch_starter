@@ -1,0 +1,33 @@
+create an Index named "countyvotes" with Type “voter “
+
+=======================================================
+=======================================================
+
+Request:
+
+PUT localhost:9200/countyvotes?pretty
+{
+  "settings": {
+    	"number_of_shards": 1,
+    	"number_of_replicas": 1
+    },
+    "mappings": {
+      "voter": {
+        "properties": {
+          "age": {
+            "type": "long"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    }
+}
+
+Response:
+
+{
+    "acknowledged": true,
+    "shards_acknowledged": true
+}

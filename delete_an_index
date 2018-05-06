@@ -1,0 +1,14 @@
+Delete created Index via http
+
+======================================
+======================================
+
+Request: 
+
+DELETE localhost:9200/countyvotes?pretty
+
+Response:
+
+{
+    "acknowledged": true
+}
